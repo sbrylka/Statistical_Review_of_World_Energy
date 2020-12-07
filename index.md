@@ -1,37 +1,15 @@
 ## Analysis based on BP's Statistical Review of World Energy dataset
 
-You can use the [editor on GitHub](https://github.com/sbrylka/Statistical_Review_of_World_Energy/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+Primary energy sources can be devided in three groups based on their origin. Every primay sources has been matched to it's group in the table below.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+|                   Renewable                   |  **Nonrenewable**  | **Nuclear** |
+|:---------------------------------------------:|:------------------:|:-----------:|
+| Water<br>Hydro<br>Wind<br>Solar<br>Geothermal | Oil<br>Gas<br>Coal | Nuclear     |
 
-### Markdown
+Contribution of these groups has been changing over years. At the begining of XX century and even earlier we were focused on using nonrenewable resources. Invension of nuclear reactors was a real game changer for some countries (*for example France*). Technological progress made renewable energy sources afforable and useful and it's share in world energy usage is growing year by year. Actual contribution was visualized below.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+![alt text](https://github.com/sbrylka/Statistical_Review_of_World_Energy/blob/main/Images/pie_chart_2019.jpeg "Pie chart based on 2019 data")
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/sbrylka/Statistical_Review_of_World_Energy/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Created by [@sbrylka](https://www.linkedin.com/in/sebastianbrylka/) using [R](https://www.r-project.org/) and [Markdown](https://guides.github.com/features/mastering-markdown/).<br>
+Published by [GithubPages](https://pages.github.com/) using  [Jekyll](https://jekyllrb.com/).<br>
+Data collected and published by [BP](https://www.bp.com/).
