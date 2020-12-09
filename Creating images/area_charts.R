@@ -3,7 +3,7 @@ library("dplyr")
 library("tidyr")
 
 #setting background as transparent
-par(bg = NA)     
+par(bg = '')     
 
 #preparing data for first chart
 area_chart_data <- Consumption  %>%
@@ -26,7 +26,8 @@ ggplot(area_chart_data.long, aes(x=Year, y= as.numeric(nazwa), fill = Source, gr
   scale_x_discrete(breaks=seq(1965,2019,2)) +
   scale_y_continuous(breaks=seq(0,650,50)) +
   ggtitle("Usage of primary energy sources by group in 1965-2019") +
-  labs(x="Year", y="Exajoules")
+  labs(x="Year", y="Exajoules") +
+  theme(plot.background = element_rect(fill = "#e6e6e6")) #ggplot requires different way of changing bakcground
 
 
 
@@ -51,5 +52,6 @@ ggplot(data = area_chart_data.long2, aes(x=Year, y= nazwa, fill=Source, group = 
   scale_x_discrete(breaks=seq(1965,2019,2)) +
   scale_y_continuous(breaks=seq(0,1,0.1)) +
   ggtitle("Contribution of primary energy sources by group in 1965-2019") +
-  labs(x="Year", y="Percentage")
+  labs(x="Year", y="Percentage") +
+  theme(plot.background = element_rect(fill = "#e6e6e6")) #ggplot requires different way of changing bakcground
 

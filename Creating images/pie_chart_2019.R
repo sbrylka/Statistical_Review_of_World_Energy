@@ -1,5 +1,8 @@
 library("dplyr")
 
+#setting transparent background
+par(bg = '#e6e6e6')     
+
 #preparing dataset
 data_2019 <- Consumption %>%
   filter(Year == 2019) %>%
@@ -15,5 +18,5 @@ percent_labels <- paste(colnames(data_2019), percent, "%", sep =" ")
 
 #creating pie chart
 pie(x = as.numeric(data_2019), labels = percent_labels, col = c("#336600","#FF0000", "#FFFF00"),
-    main = "Contribution of primary energy sources", bg = NA)
-#bg = NA provides transparent background for the chart
+    main = "Contribution of primary energy sources")
+
