@@ -10,8 +10,10 @@ data_2019 <- Consumption %>%
   )
 
 #creating percent labels
-percent <- round(data_2019/sum(data_2019)*100)
+percent <- round(data_2019/sum(data_2019)*100, digits = 2)
 percent_labels <- paste(colnames(data_2019), percent, "%", sep =" ")
 
 #creating pie chart
-pie(x = as.numeric(data_2019), labels = percent_labels, col = c("#336600","#FF0000", "#FFFF00"), main = "Contribution of primary energy sources")
+pie(x = as.numeric(data_2019), labels = percent_labels, col = c("#336600","#FF0000", "#FFFF00"),
+    main = "Contribution of primary energy sources", bg = NA)
+#bg = NA provides transparent background for the chart
